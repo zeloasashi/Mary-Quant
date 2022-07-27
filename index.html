@@ -13,17 +13,21 @@
 </head>
 
 <body>
-    <!-- <div id="preloading">
+    <!-- LOADING畫面問題：
+        1.影片可以跟著延遲播放嗎?
+        2.NAV也會出現-->
+    <div id="preloading">
         <div id="status" class="icon-white">
             <img class="w-100 icon-white" src="./images/logo2.gif" />
         </div>
-    </div> -->
+    </div>
+    <!-- ------------------------LOADING結束------------------------- -->
     <nav>
         <div class="container">
             <div class="row">
                     <div class="nav-links col">
                         <div class="links d-flex">
-                            <a href="">ABOUT</a>
+                            <a href="#about-sec">ABOUT</a>
                             <a href="">DESIGN</a>
                             <!-- <a href="">BAZAAR</a> -->
                             <!-- <a href="">GINGER</a> -->
@@ -40,11 +44,12 @@
             </div>
         </div>
     </nav>
-    <!-- 影片看要不要加loop="" -->
+    <!-- ------------------------NAV結束------------------------- -->
+    <!-- 影片看要不要加loop="" autoplay=""-->
     <div class="mq-video">
         <div id="mainVisual" style="display: block;">
             <div class="videoCover pc"></div>
-                <video class="video w-100" muted="" autoplay="" data-src="bei-mei-guan-ma-li-guan-shi-shang-ge-ming-zhe-mary-quant-fashion-revolutionary-30cf.mp4" src="bei-mei-guan-ma-li-guan-shi-shang-ge-ming-zhe-mary-quant-fashion-revolutionary-30cf.mp4"></video>
+                <video class="video w-100" muted="" controls data-src="bei-mei-guan-ma-li-guan-shi-shang-ge-ming-zhe-mary-quant-fashion-revolutionary-30cf.mp4" src="bei-mei-guan-ma-li-guan-shi-shang-ge-ming-zhe-mary-quant-fashion-revolutionary-30cf.mp4"></video>
                 <div class="src">
                     <p class="small">
                     北美館│瑪莉官：時尚革命者 Mary Quant: Fashion Revolutionary <br>
@@ -52,10 +57,51 @@
                     </p>
                 </div>
         </div>
-        
     </div>
-
-
+    <!-- ------------------------影片結束------------------------- -->
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div id="about-sec" class="title">
+                </div>
+                    <h2>ABOUT</h2>
+                </div>
+                <div class="col-12 col-md-8">
+                    <div class="about-img">
+                        <ul class="train d-flex list-unstyled">
+                            <li>
+                                <img class="w-100" src="./images/Q1.png" alt="">
+                            </li>
+                            <li>
+                                <img src="./im" alt="">
+                            </li>
+                            <li>
+                                <img src="./im" alt="">
+                            </li>
+                            <li>
+                                <img src="./im" alt="">
+                            </li>
+                            <li>
+                                <img src="./im" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <div class="btn prev">＜</div>
+                        <div class="btn next">＞</div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="about-text">
+                        <p>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <script src="./jquery.css/jquery-3.6.0.min.js"></script>
@@ -70,13 +116,7 @@
             //delay --> 延遲幾秒才fadeOut
             $('#preloading').delay(2000).fadeOut(1000);
         })
-        
-        // $('.img-wrap > img').mouseenter(function(){
-        //     $('.img-wrap img').attr('src','./images/icon 500 o.png')
-        // })
-        // $('.img-wrap > img').mouseleave(function(){
-        //     $('.img-wrap img').attr('src','./images/white icon 字.png')
-        // })
+
         $('.img-wrap > img').hover(function(){
             $('.img-wrap img').attr('src','./images/icon 500 o.png')},function(){
                 $('.img-wrap img').attr('src','./images/white icon 字.png').addClass('img-hover')
