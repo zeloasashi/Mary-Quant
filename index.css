@@ -3,7 +3,7 @@ body{
     box-sizing: border-box;
     background-color: #005166;
 }
-/* -----------------------LOADING畫面結束---------------------- */
+/* -----------------------BODY畫面結束---------------------- */
 #preloading {
     position: fixed;
     width: 100%;
@@ -33,7 +33,10 @@ nav{
     height: 100px;
     background-color: #005166;
     position: fixed;
+    top: 0;
     z-index: 10;
+    box-shadow: 0px 0px 10px #666;
+    transition: .5s;
 }
 .links{
     justify-content: center;
@@ -59,8 +62,16 @@ nav{
     line-height: 70px;
     transition: 0.5s;
 }
-.img-hover{
-    transition: 0.5s;
+
+.icon-svg{
+    width: 80px;
+    
+}
+svg{
+    transition: .5s;
+}
+.hidden{
+    transform: translateY(-100px);
 }
 /* -----------------------NAV結束---------------------- */
 .mq-video{
@@ -80,16 +91,91 @@ nav{
 }
 /* -----------------------影片結束---------------------- */
 .about{
-    margin: 50px auto;
+    margin: 7rem auto;
+}
+.about .row{
+    align-items: center;
 }
 h2{
     font-family: Impact;
-    font-size: 3rem;
-    color: azure;
+    font-size: 5rem;
+    /* color: azure; */
 }
-.about .about-img{
-    /* width: 50%;
-    height: 50%; */
-    border-radius: 5px;
+.about-img{
+    margin: 30px auto 0;
+    transition: .5s;
 }
+img{
+    width: 100%;
+    height: auto;
+    
+}
+.first{
+    width: 350px;
+    height: 350px;
+    border-radius: 8px;
+    background: url(./images/Q2.jpg) center center / cover;
 
+}
+.second{
+    width: 350px;
+    height: 350px;
+    border-radius: 8px;
+    background: url(./images/Q3.jpg) center center / cover;
+    overflow: hidden;
+    /* margin: -20px auto 0; */
+}
+.third{
+    width: 350px;
+    height: 350px;
+    border-radius: 8px;
+    background: url(./images/Q4.png) center center / cover;
+    overflow: hidden;
+}
+.years{
+    margin-top: 30px;
+}
+.years h3{
+    font-family: Impact;
+    font-size: 4rem;
+    text-align: center;
+    /* color: #FF7200; */
+}
+.about-text{
+    margin: 30px auto;
+    
+}
+/* -----------------------ABOUT結束---------------------- */
+.design .title h3{
+    font-family: Impact;
+    font-size: 5rem;
+}
+/* @media screen and (min-width:720px){
+    .design-img{
+        
+    }
+} */
+.d-img-wrap{
+    max-width: 980px;
+    max-height: 653px;
+    overflow: hidden;
+    border-radius: 8px;
+    /* outline: 1px solid red; */
+    margin: 0 auto;
+    position: relative;
+}
+ul.train{
+    width: 400%;
+    transition: .5s;
+    transform: translateX(-0px);
+}
+.btn-group{
+    position: absolute;
+    justify-content: space-between;
+    transform: translateY(-100%);
+    
+}
+.btn-group .btn{
+    color:aliceblue;
+    font-size: 2rem;
+}
