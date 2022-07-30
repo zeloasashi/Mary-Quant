@@ -29,15 +29,21 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+.icon-white{
+    animation: loading 2.5s ease infinite;
+}
+@keyframes loading {
+    from{
+        transform: rotate(0deg);
 
+    }
+    to{
+        transform: rotate(360deg);
+
+    }
 }
 
-.icon-white img {
-    transform: rotate(360deg);
-    transition: 3s;
-
-
-}
 
 /* -----------------------LOADING畫面結束---------------------- */
 nav {
@@ -79,8 +85,7 @@ nav {
 }
 
 .icon-svg {
-    width: 80px;
-
+    width: 70px;
 }
 
 svg {
@@ -112,20 +117,20 @@ svg {
 
 /* -----------------------影片結束---------------------- */
 .about {
-    margin: 7rem auto;
+    margin: 2.5rem auto;
     position: relative;
+    background-color: azure;
+    padding: 3rem 0;
 }
-
+.about h3,.about p{
+    color: #005166;
+}
+.about h4{
+    color: #ff7300;
+}
 .about .row {
     align-items: center;
 }
-
-h2 {
-    font-family: Impact;
-    font-size: 5rem;
-    /* color: azure; */
-}
-
 .about-img {
     margin: 30px auto 0;
     transition: .5s;
@@ -202,7 +207,7 @@ img {
     margin-top: 30px;
 }
 
-.years h3 {
+.years h4 {
     font-family: Impact;
     font-size: 4rem;
     text-align: center;
@@ -234,16 +239,17 @@ img {
 } */
 
 /* -----------------------ABOUT結束---------------------- */
-.design .title h3 {
+.design{
+    position: relative;
+    background-color: #005166;
+    color: azure;
+    margin: 2.5rem auto;
+}
+h3 {
     font-family: Impact;
     font-size: 5rem;
 }
 
-/* @media screen and (min-width:720px){
-    .design-img{
-        
-    }
-} */
 .d-img-wrap {
     max-width: 980px;
     max-height: 653px;
@@ -271,49 +277,42 @@ ul.train {
     }
     
 }
-
 .btn-group {
-    border: 3px solid red;
+    /* border: 3px solid red; */
     /* position: absolute; */
     justify-content: space-between;
     margin: 0 auto;
     transform: translateY(-50vh);
     /* transform: translateX(1000%); */
-
-
 }
-
-.btn-group .btn {
+.btn-group .btn{
     color: azure;
-    font-size: 2rem;
+    font-size: 3rem;
 }
-
-/* -----------------------DESIGN結束---------------------- */
-.top-btn {
-    width: 70px;
-    position: fixed;
-    bottom: 35px;
-    right: 25px;
+.design-test-img img{
+    margin-top: 15px;
+    border-radius: 8px;
 }
-
-.top-btn a {
-    text-decoration: none;
-    font-family: Impact;
+.mb-text{
+    padding: 8px;
 }
 .design-text{
     max-width: 980px;
     max-height: 653px;
-    min-width: 375px;
     overflow: hidden;
     margin: 10px auto;
 }
 .design-text li{
-    min-width: 375px;
     max-width: 980px;
     max-height: 653px;
 }
-.design{
-    position: relative;
+.design-text p{
+    padding: 20px;
+    margin: 0 auto;
+}
+.bg-clothes{
+    z-index: -1;
+    transition: .5s;
 }
 .clothes{
     width: 300px;
@@ -321,16 +320,109 @@ ul.train {
     bottom: 10%;
     left: 1%;
     animation: model1 2s ease infinite;
-
 }
-@keyframes model1 {
+/* @keyframes model1 {
     0%,100%{
-            transform: rotate(0deg);
+            transform: rotate(-5deg);
         
     }
     50%{
-            transform: rotate(5deg);
+            transform: rotate(0deg);
     }
+} */
+
+/* -----------------------DESIGN結束---------------------- */
+
+.make-up{
+    width: 100%;
+    background: url(./images/landing-bg.jpeg) center center / cover;
+    background-attachment: fixed;
+    padding: 2.5rem 0;
+}
+.make-up h3{
+    color: #ff7300;
+}
+.product{
+    flex-direction: column;
+    margin: 10px auto;
+    background-color: rgba(255, 255, 255, 0.671);
+    border-radius: 8px;
+}
+
+.powder{
+    width: 270px;
+}
+.eyebrow{
+    width: 270px;
+}
+.eyeline{
+    width: 270px;
+}
+.eyeshadow{
+    width: 270px;
+}
+.make-up p{
+    text-align: center;
+}
+.product:hover .powder,.product:hover .eyebrow,.product:hover .eyeline,.product:hover .eyeshadow{
+    animation: swing 1.2s ease infinite;
+    transition: .5s;
+}
+@keyframes swing {
+    0%,100%{
+        transform: rotate(-10deg);
+    }
+    50%{
+        transform: rotate(10deg);
+    }
+}
+/* -----------------------MAKE UP結束---------------------- */
+.store{
+    width: 100%;
+    /* height: 600px; */
+    background: url(./images/eyeshadow_pen1.jpeg) center center / cover;
+    background-attachment: fixed;
+    padding: 2.5rem 0;
+}
+.store h3{
+    color: azure;
+}
+.store-btn{
+    flex-direction: column;
+    letter-spacing: 1px;
+    margin: 30px auto;
+    width: 300px;
+    
+}
+.store-btn .btn{
+    margin: 20px auto;
+    padding: 15px 50px;
+    background-color: rgba(255, 255, 255, 0.666);
+
+}
+.store a{
+    font-size: 1.2rem;
+    color: #005166;
+    text-decoration: none;
+}
+.store i{
+    font-size: 2.5rem;
+}
+.store-btn .btn:hover{
+    background-color: orange;
+    transition: .5s;
+}
+/* -----------------------STORE結束---------------------- */
+
+.top-btn {
+    width: 70px;
+    position: fixed;
+    bottom: 35px;
+    right: 25px;
+}
+.top-btn a {
+    text-decoration: none;
+    font-family: Impact;
 }
 
 /* footer */

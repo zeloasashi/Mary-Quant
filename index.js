@@ -5,11 +5,11 @@ $(window).load(function () {
     $('#preloading').delay(2000).fadeOut(1000);
 })
 // LOADING畫面結束
-// $('.img-wrap > img').hover(function () {
-//     $('.img-wrap img').attr('src', './images/icon 500 o.png')
-// }, function () {
-//     $('.img-wrap img').attr('src', './images/white icon 字.png').addClass('img-hover')
-// })
+$('.img-wrap > img').hover(function () {
+    $('.img-wrap img').attr('src', './images/icon 500 o.png')
+}, function () {
+    $('.img-wrap img').attr('src', './images/white icon 字.png').addClass('img-hover')
+})
 // NAV換圖結束
 $('.icon-svg > svg').mouseenter(function () {
     console.log('hi');
@@ -45,8 +45,8 @@ $(window).scroll(function () {
 // ABOUT動態
 // $('.first').offset({})
 $(window).scroll(function () {
-    console.log('first offsetTop:', $('.first').offset().top);
-    console.log('first scrollTop:', $('.first').scrollTop());
+    // console.log('first offsetTop:', $('.first').offset().top);
+    // console.log('first scrollTop:', $('.first').scrollTop());
     if ($(window).scrollTop() >= ($('.first').offset().top - $(window).height() * 2 / 3)) {
         $('.first').css({
             transform: 'translateX(0px)',
@@ -63,8 +63,8 @@ $(window).scroll(function () {
 
 })
 $(window).scroll(function () {
-    console.log('second offsetTop:', $('.second-test > .second').offset().top);
-    console.log('first scrollTop:', $('.second').scrollTop());
+    // console.log('second offsetTop:', $('.second-test > .second').offset().top);
+    // console.log('first scrollTop:', $('.second').scrollTop());
     if ($(window).scrollTop() >= ($('.second-test > .second').offset().top - $(window).height() * 2 / 3)) {
         $('.second-test ').css({
             transform: 'translateX(0px)',
@@ -81,8 +81,8 @@ $(window).scroll(function () {
 
 })
 $(window).scroll(function () {
-    console.log('third offsetTop:', $('.third').offset().top);
-    console.log('third scrollTop:', $('.third').scrollTop());
+    // console.log('third offsetTop:', $('.third').offset().top);
+    // console.log('third scrollTop:', $('.third').scrollTop());
     if ($(window).scrollTop() >= ($('.third').offset().top - $(window).height() * 2 / 3)) {
         $('.third').css({
             transform: 'translateX(0px)',
@@ -99,24 +99,24 @@ $(window).scroll(function () {
 
 })
 // 為什麼字沒有跟著一起動態QQ
-$(window).scroll(function () {
-    console.log('years offsetTop:', $('.years').offset().top);
-    console.log('years scrollTop:', $('.years').scrollTop());
-    if ($(window).scrollTop() >= ($('.years').offset().top - $(window).height() * 2 / 3)) {
-        $('.years').css({
-            transform: 'translateY(0px)',
-            opacity: 1,
-        })
+// $(window).scroll(function () {
+//     console.log('years offsetTop:', $('.years').offset().top);
+//     console.log('years scrollTop:', $('.years').scrollTop());
+//     if ($(window).scrollTop() >= ($('.years').offset().top - $(window).height() * 2 / 3)) {
+//         $('.years').css({
+//             transform: 'translateY(0px)',
+//             opacity: 1,
+//         })
 
-    }
-    else {
-        $('.years').css({
-            transform: 'translateY(100px)',
-            opacity: 0,
-        })
-    }
+//     }
+//     else {
+//         $('.years').css({
+//             transform: 'translateY(100px)',
+//             opacity: 0,
+//         })
+//     }
 
-})
+// })
 
 // 試著做做看視差捲動
 // const daisy = document.querySelectorAll('.icon-test > svg');
@@ -189,4 +189,25 @@ $(window).resize(function () {
     const movement = (0 - nowPage * $('.d-img-wrap').width());
     $('ul.train').css('transform', `translateX(${movement}px)`);
 })
+// 猶豫假人要不要浮上來
+// $(window).scroll(function () {
+//     // console.log('third offsetTop:', $('.third').offset().top);
+//     // console.log('third scrollTop:', $('.third').scrollTop());
+//     if ($(window).scrollTop() >= ($('.train').offset().top - $(window).height() * 2 / 3)) {
+//         $('.bg-clothes').css({
+//             transform: 'translateY(0px)',
+//             opacity: 1,
+//         })
+
+//     }
+//     else {
+//         $('.bg-clothes').css({
+//             transform: 'translateY(100px)',
+//             opacity: 0,
+//         })
+//     }
+
+// })
+
+// DESIGN結束
 
