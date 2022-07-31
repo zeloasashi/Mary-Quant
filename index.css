@@ -117,10 +117,17 @@ svg {
 
 /* -----------------------影片結束---------------------- */
 .about {
-    margin: 2.5rem auto;
+    margin: 0 auto 2.5rem;
     position: relative;
-    background-color: azure;
     padding: 3rem 0;
+    background-color: azure;
+}
+@media screen and (min-width:720px) {
+    .about{
+        background: url(./images/半透明.png) right bottom / 10% no-repeat, url(./images/半透明.png) right top / 10% no-repeat;
+        background-color: azure;
+    }
+    
 }
 .about h3,.about p{
     color: #005166;
@@ -248,6 +255,7 @@ img {
 h3 {
     font-family: Impact;
     font-size: 5rem;
+    color: #ff7300;
 }
 
 .d-img-wrap {
@@ -265,7 +273,7 @@ ul.train {
     transition: 1s;
 
 }
-@media screen and (max-width:720px){
+/* @media screen and (max-width:720px){
     .d-img-wrap{
         transform: translateX(-0px);
         scroll-snap-type: x mandatory;
@@ -276,7 +284,7 @@ ul.train {
         scroll-snap-align: start;
     }
     
-}
+} */
 .btn-group {
     /* border: 3px solid red; */
     /* position: absolute; */
@@ -285,8 +293,8 @@ ul.train {
     transform: translateY(-50vh);
     /* transform: translateX(1000%); */
 }
-.btn-group .btn{
-    color: azure;
+.btn-group .btn i{
+    color: rgb(229, 255, 255);
     font-size: 3rem;
 }
 .design-test-img img{
@@ -306,21 +314,21 @@ ul.train {
     max-width: 980px;
     max-height: 653px;
 }
-.design-text p{
-    padding: 20px;
+.design-text h5,.design-text p{
+    padding: 5px 20px;
     margin: 0 auto;
 }
-.bg-clothes{
+/* .bg-clothes{
     z-index: -1;
     transition: .5s;
-}
-.clothes{
+} */
+/* .clothes{
     width: 300px;
     position: absolute;
     bottom: 10%;
     left: 1%;
     animation: model1 2s ease infinite;
-}
+} */
 /* @keyframes model1 {
     0%,100%{
             transform: rotate(-5deg);
