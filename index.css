@@ -1,5 +1,5 @@
 *{
-    /* outline: 1px solid; */
+    outline: 1px solid;
 }
 html {
     scroll-behavior: smooth;
@@ -407,6 +407,10 @@ ul.train {
 .info-text p{
     color: azure;
 }
+/* .map iframe{
+    width: 400px;
+    height: 350px;
+} */
 @media screen and (min-width:720px) {
     .store{
         background: url(./images/白色.png) right bottom / 10% no-repeat;
