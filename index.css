@@ -177,7 +177,7 @@ img {
     margin: 0 auto;
 }
 
-/* 第二張圖往右長爆版了QQ */
+/* 第二張圖爆版了QQ */
 @media screen and (min-width:720px) {
     .second:hover {
         width: 700px;
@@ -388,14 +388,33 @@ ul.train {
 .store{
     width: 100%;
     /* height: 600px; */
-    background: url(./images/eyeshadow_pen1.jpeg) center center / cover;
-    background-attachment: fixed;
-    padding: 2.5rem 0;
+    /* background: url(./images/eyeshadow_pen1.jpeg) center center / cover; */
+    /* background-attachment: fixed; */
+    padding: 2.5rem 0 5rem;
+    margin: 0 auto;
 }
 .store h3{
     color: azure;
 }
-.store-btn{
+.info-text{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info-text h5,.info-text span{
+    color: #ff7300;
+}
+.info-text p{
+    color: azure;
+}
+@media screen and (min-width:720px) {
+    .store{
+        background: url(./images/白色.png) right bottom / 10% no-repeat;
+        /* background-color: azure; */
+    }
+    
+}
+/* .store-btn{
     flex-direction: column;
     letter-spacing: 1px;
     margin: 30px auto;
@@ -419,7 +438,7 @@ ul.train {
 .store-btn .btn:hover{
     background-color: orange;
     transition: .5s;
-}
+} */
 /* -----------------------STORE結束---------------------- */
 
 .top-btn {
