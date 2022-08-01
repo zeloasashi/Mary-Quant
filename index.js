@@ -49,14 +49,14 @@ $(window).scroll(function () {
     // console.log('first scrollTop:', $('.first').scrollTop());
     if ($(window).scrollTop() >= ($('.first').offset().top - $(window).height() * 2 / 3)) {
         $('.first').css({
-            transform: 'translateX(0px)',
+            transform: 'translateY(0px)',
             opacity: 1,
         })
 
     }
     else {
         $('.first').css({
-            transform: 'translateX(-100px)',
+            transform: 'translateY(-100px)',
             opacity: 0,
         })
     }
@@ -65,16 +65,16 @@ $(window).scroll(function () {
 $(window).scroll(function () {
     // console.log('second offsetTop:', $('.second-test > .second').offset().top);
     // console.log('first scrollTop:', $('.second').scrollTop());
-    if ($(window).scrollTop() >= ($('.second-test > .second').offset().top - $(window).height() * 2 / 3)) {
-        $('.second-test ').css({
-            transform: 'translateX(0px)',
+    if ($(window).scrollTop() >= ($('.second').offset().top - $(window).height() * 2 / 3)) {
+        $('.second').css({
+            transform: 'translateY(0px)',
             opacity: 1,
         })
 
     }
     else {
-        $('.second-test ').css({
-            transform: 'translateX(100px)',
+        $('.second').css({
+            transform: 'translateY(100px)',
             opacity: 0,
         })
     }
@@ -85,14 +85,14 @@ $(window).scroll(function () {
     // console.log('third scrollTop:', $('.third').scrollTop());
     if ($(window).scrollTop() >= ($('.third').offset().top - $(window).height() * 2 / 3)) {
         $('.third').css({
-            transform: 'translateX(0px)',
+            transform: 'translateY(0px)',
             opacity: 1,
         })
 
     }
     else {
         $('.third').css({
-            transform: 'translateX(-100px)',
+            transform: 'translateY(-100px)',
             opacity: 0,
         })
     }

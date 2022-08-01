@@ -1,6 +1,6 @@
-*{
+/* *{
     outline: 1px solid;
-}
+} */
 html {
     scroll-behavior: smooth;
 }
@@ -118,7 +118,7 @@ svg {
 /* -----------------------影片結束---------------------- */
 .about {
     margin: 0 auto 2.5rem;
-    position: relative;
+    /* position: relative; */
     padding: 3rem 0;
     background-color: azure;
 }
@@ -162,23 +162,24 @@ img {
         width: 700px;
         border-radius: 8px;
         height: 350px;
+        overflow: hidden;
         background: url(./images/Q2.jpg) center center / cover;
     }
 }
 
-.second-test {
+.second{
     width: 350px;
     height: 350px;
     border-radius: 8px;
     background: url(./images/Q3.jpg) center center / cover;
     overflow: hidden;
     transform-origin: 100% 100%;
-    transition: .5s;
+    /* transition: .5s; */
     margin: 0 auto;
 }
 
 /* 第二張圖爆版了QQ */
-@media screen and (min-width:720px) {
+/* @media screen and (min-width:720px) {
     .second:hover {
         width: 700px;
         overflow: hidden;
@@ -190,7 +191,7 @@ img {
         transform: translateX(-350px);
     }
 
-}
+} */
 
 .third {
     width: 350px;
@@ -226,16 +227,16 @@ img {
 
 }
 
-.bg-test {
+/* .bg-test {
     position: absolute;
     top: 0;
     background-attachment: fixed;
     opacity: .3;
     z-index: -1;
-    /* width: 100%;
+    width: 100%;
     height: auto;
-    background: url(./images/BG.png) center center / cover; */
-}
+    background: url(./images/BG.png) center center / cover;
+} */
 
 /* 試著做做看視差捲動 */
 /* .test .icon-test{
@@ -314,9 +315,17 @@ ul.train {
     max-width: 980px;
     max-height: 653px;
 }
+.design-text h5{
+    font-weight: bold;
+    color: #ff7300;
+}
 .design-text h5,.design-text p{
     padding: 5px 20px;
     margin: 0 auto;
+}
+.mb-text h5{
+    font-weight: bold;
+    color: #ff7300;
 }
 /* .bg-clothes{
     z-index: -1;
@@ -343,6 +352,7 @@ ul.train {
 
 .make-up{
     width: 100%;
+    height: auto;
     background: url(./images/landing-bg.jpeg) center center / cover;
     background-attachment: fixed;
     padding: 2.5rem 0;
@@ -355,10 +365,14 @@ ul.train {
     margin: 10px auto;
     background-color: rgba(255, 255, 255, 0.671);
     border-radius: 8px;
+    transition: .5s;
+
 }
 
 .powder{
     width: 270px;
+    transition: .5s;
+    
 }
 .eyebrow{
     width: 270px;
@@ -403,14 +417,15 @@ ul.train {
 }
 .info-text h5,.info-text span{
     color: #ff7300;
+    font-weight: bold;
 }
 .info-text p{
     color: azure;
 }
-/* .map iframe{
-    width: 400px;
-    height: 350px;
-} */
+.map{
+    height: 300px;
+    margin: 20px auto;
+}
 @media screen and (min-width:720px) {
     .store{
         background: url(./images/白色.png) right bottom / 10% no-repeat;
