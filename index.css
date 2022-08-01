@@ -31,7 +31,7 @@ body {
     transform: translate(-50%, -50%);
 }
 .icon-white{
-    animation: loading 2.5s ease infinite;
+    animation: loading 3s infinite;
 }
 @keyframes loading {
     from{
@@ -124,8 +124,9 @@ svg {
 }
 @media screen and (min-width:720px) {
     .about{
-        background: url(./images/半透明.png) right bottom / 10% no-repeat, url(./images/半透明.png) right top / 10% no-repeat;
+        background: url(./images/半透明-left.png) right bottom / 10% no-repeat, url(./images/半透明-left.png) right top / 10% no-repeat;
         background-color: azure;
+
     }
     
 }
@@ -353,9 +354,10 @@ ul.train {
 .make-up{
     width: 100%;
     height: auto;
-    background: url(./images/landing-bg.jpeg) center center / cover;
+    background: url(./images/landing-bg-og.png) center center / cover;
     background-attachment: fixed;
     padding: 2.5rem 0;
+
 }
 .make-up h3{
     color: #ff7300;
@@ -363,10 +365,9 @@ ul.train {
 .product{
     flex-direction: column;
     margin: 10px auto;
-    background-color: rgba(255, 255, 255, 0.671);
+    background-color: rgba(255, 255, 255, 0.816);
     border-radius: 8px;
-    transition: .5s;
-
+    
 }
 
 .powder{
@@ -387,7 +388,7 @@ ul.train {
     text-align: center;
 }
 .product:hover .powder,.product:hover .eyebrow,.product:hover .eyeline,.product:hover .eyeshadow{
-    animation: swing 1.2s ease infinite;
+    animation: swing 1s infinite;
     transition: .5s;
 }
 @keyframes swing {
@@ -428,7 +429,7 @@ ul.train {
 }
 @media screen and (min-width:720px) {
     .store{
-        background: url(./images/白色.png) right bottom / 10% no-repeat;
+        background: url(./images/白色半透明.png) right bottom / 10% no-repeat;
         /* background-color: azure; */
     }
     
