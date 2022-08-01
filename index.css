@@ -328,18 +328,25 @@ ul.train {
     font-weight: bold;
     color: #ff7300;
 }
-/* .bg-clothes{
+.bg-clothes-left,.bg-clothes-right{
     z-index: -1;
     transition: .5s;
-} */
-/* .clothes{
+}
+.clothes-left{
     width: 300px;
     position: absolute;
     bottom: 10%;
     left: 1%;
     animation: model1 2s ease infinite;
-} */
-/* @keyframes model1 {
+}
+.clothes-right{
+    width: 325px;
+    position: absolute;
+    bottom: 10%;
+    right: 3%;
+    animation: model2 2s ease infinite;
+}
+@keyframes model1 {
     0%,100%{
             transform: rotate(-5deg);
         
@@ -347,8 +354,16 @@ ul.train {
     50%{
             transform: rotate(0deg);
     }
-} */
-
+}
+@keyframes model2 {
+    0%,100%{
+            transform: rotate(0deg);
+        
+    }
+    50%{
+            transform: rotate(5deg);
+    }
+}
 /* -----------------------DESIGN結束---------------------- */
 
 .make-up{
@@ -407,6 +422,7 @@ ul.train {
     /* background-attachment: fixed; */
     padding: 2.5rem 0 5rem;
     margin: 0 auto;
+    
 }
 .store h3{
     color: azure;
@@ -466,6 +482,7 @@ ul.train {
     position: fixed;
     bottom: 35px;
     right: 25px;
+    transition: .5s;
 }
 .top-btn a {
     text-decoration: none;

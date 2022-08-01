@@ -190,24 +190,59 @@ $(window).resize(function () {
     $('ul.train').css('transform', `translateX(${movement}px)`);
 })
 // 猶豫假人要不要浮上來
-// $(window).scroll(function () {
-//     // console.log('third offsetTop:', $('.third').offset().top);
-//     // console.log('third scrollTop:', $('.third').scrollTop());
-//     if ($(window).scrollTop() >= ($('.train').offset().top - $(window).height() * 2 / 3)) {
-//         $('.bg-clothes').css({
-//             transform: 'translateY(0px)',
-//             opacity: 1,
-//         })
+$(window).scroll(function () {
+    // console.log('third offsetTop:', $('.third').offset().top);
+    // console.log('third scrollTop:', $('.third').scrollTop());
+    if ($(window).scrollTop() >= ($('.train').offset().top - $(window).height() * 1 / 4)) {
+        $('.bg-clothes-left').css({
+            transform: 'translateY(0px)',
+            opacity: 1,
+        })
 
-//     }
-//     else {
-//         $('.bg-clothes').css({
-//             transform: 'translateY(100px)',
-//             opacity: 0,
-//         })
-//     }
+    }
+    else {
+        $('.bg-clothes-left').css({
+            transform: 'translateY(100px)',
+            opacity: 0,
+        })
+    }
 
-// })
+})
+$(window).scroll(function () {
+    // console.log('third offsetTop:', $('.third').offset().top);
+    // console.log('third scrollTop:', $('.third').scrollTop());
+    if ($(window).scrollTop() >= ($('.train').offset().top - $(window).height() * 1 / 4)) {
+        $('.bg-clothes-right').css({
+            transform: 'translateY(0px)',
+            opacity: 1,
+        })
+
+    }
+    else {
+        $('.bg-clothes-right').css({
+            transform: 'translateY(-100px)',
+            opacity: 0,
+        })
+    }
+
+})
 
 // DESIGN結束
+$(window).scroll(function () {
+    // console.log('first offsetTop:', $('.first').offset().top);
+    // console.log('first scrollTop:', $('.first').scrollTop());
+    if ($(window).scrollTop() >= ($('.store').offset().top - $(window).height() * 1 / 3)) {
+        $('.top-btn').css({
+            transform: 'translateY(0px)',
+            opacity: 1,
+        })
 
+    }
+    else {
+        $('.top-btn').css({
+            transform: 'translateY(50px)',
+            opacity: 0,
+        })
+    }
+
+})
