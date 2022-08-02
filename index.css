@@ -481,8 +481,8 @@ ul.train {
 .top-btn {
     width: 70px;
     position: fixed;
-    bottom: 35px;
-    right: 25px;
+    bottom: 45px;
+    right: 15px;
     transition: .5s;
 }
 .top-btn a {
