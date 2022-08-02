@@ -123,6 +123,7 @@ svg {
     /* position: relative; */
     padding: 3rem 0;
     background-color: azure;
+    position: relative;
 }
 @media screen and (min-width:720px) {
     .about{
@@ -132,6 +133,22 @@ svg {
     }
     
 }
+/* .about-bgtest .right{
+    position: absolute;
+    width: 700px;
+    right: 70px;
+    transform: rotate(45deg);
+    filter: blur(5px);
+}
+.about-bgtest .left{
+    position: absolute;
+    width: 500px;
+    bottom: 50px;
+    left: 100px;
+    transform: rotate(-45deg);
+    filter: blur(5px);
+} */
+
 .about h3,.about p{
     color: #005166;
 }
@@ -384,11 +401,12 @@ ul.train {
     margin: 10px auto;
     background-color: rgba(255, 255, 255, 0.816);
     /* border-radius: 8px; */
-    
+    backdrop-filter: blur(2px);
 }
 
 .powder{
     width: 270px;
+
     transition: .5s;
     
 }
