@@ -193,7 +193,7 @@ $(window).resize(function () {
 $(window).scroll(function () {
     // console.log('third offsetTop:', $('.third').offset().top);
     // console.log('third scrollTop:', $('.third').scrollTop());
-    if ($(window).scrollTop() >= ($('.train').offset().top - $(window).height() * 1 / 4)) {
+    if ($(window).scrollTop() >= ($('.train').offset().top - $(window).height() * 1 / 6)) {
         $('.bg-clothes-left').css({
             transform: 'translateX(0px)',
             opacity: 1,
@@ -211,7 +211,7 @@ $(window).scroll(function () {
 $(window).scroll(function () {
     // console.log('third offsetTop:', $('.third').offset().top);
     // console.log('third scrollTop:', $('.third').scrollTop());
-    if ($(window).scrollTop() >= ($('.train').offset().top - $(window).height() * 1 / 4)) {
+    if ($(window).scrollTop() >= ($('.train').offset().top - $(window).height() * 3 / 4)) {
         $('.bg-clothes-right').css({
             transform: 'translateX(0px)',
             opacity: 1,
