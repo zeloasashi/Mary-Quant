@@ -5,15 +5,15 @@ $(window).load(function () {
     $('#preloading').delay(2000).fadeOut(1000);
 })
 // LOADING畫面結束
-$('.img-wrap > img').hover(function () {
-    $('.img-wrap img').attr('src', './images/icon 500 o.png')
-}, function () {
-    $('.img-wrap img').attr('src', './images/white icon 字.png').addClass('img-hover')
-})
+// $('.img-wrap > img').hover(function () {
+//     $('.img-wrap img').attr('src', './images/icon 500 o.png')
+// }, function () {
+//     $('.img-wrap img').attr('src', './images/white icon 字.png').addClass('img-hover')
+// })
 // NAV換圖結束
 $('.icon-svg > svg').mouseenter(function () {
     console.log('hi');
-    $('.icon-svg > svg').attr('fill', '#FF7200')
+    $('.icon-svg > svg').attr('fill', '#ff7300')
 })
 $('svg').mouseleave(function () {
     $('.icon-svg > svg').attr('fill', '#fff')

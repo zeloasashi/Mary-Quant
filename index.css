@@ -9,6 +9,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     background-color: #005166;
+    /* background-color: azure; */
     
 }
 
@@ -53,7 +54,7 @@ nav {
     position: fixed;
     top: 0;
     z-index: 10;
-    box-shadow: 0px 0px 10px #666;
+    box-shadow: 0px 0px 10px #888;
     transition: .5s;
 }
 
@@ -67,13 +68,14 @@ nav {
     /* border: 3px solid red; */
     margin: auto;
     font-family: Impact;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 100px;
     text-decoration: none;
 }
 
 .links a:hover {
-    color: #FF7200;
+    /* text-shadow: 0px 0px 7px rgb(88, 88, 88); */
+    color: #ff7300;
     transition: .5s;
 }
 
@@ -250,7 +252,7 @@ img {
 /* -----------------------ABOUT結束---------------------- */
 .design{
     position: relative;
-    background-color: #005166;
+    /* background-color: #005166; */
     color: azure;
     margin: 2.5rem auto;
 }
@@ -369,7 +371,7 @@ ul.train {
 .make-up{
     width: 100%;
     height: auto;
-    background: url(./images/landing-bg-og.png) center center / cover;
+    background: url(./images/landing-bg-orange.jpg) center center / cover;
     background-attachment: fixed;
     padding: 2.5rem 0;
 
@@ -422,7 +424,6 @@ ul.train {
     /* background-attachment: fixed; */
     padding: 2.5rem 0 5rem;
     margin: 0 auto;
-    
 }
 .store h3{
     color: azure;
