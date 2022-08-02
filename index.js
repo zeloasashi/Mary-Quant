@@ -213,14 +213,14 @@ $(window).scroll(function () {
     // console.log('third scrollTop:', $('.third').scrollTop());
     if ($(window).scrollTop() >= ($('.train').offset().top - $(window).height() * 3 / 4)) {
         $('.bg-clothes-right').css({
-            transform: 'translateX(0px)',
+            transform: 'translateY(0px)',
             opacity: 1,
         })
 
     }
     else {
         $('.bg-clothes-right').css({
-            transform: 'translateX(100px)',
+            transform: 'translateY(100px)',
             opacity: 0,
         })
     }
