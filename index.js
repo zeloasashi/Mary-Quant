@@ -231,7 +231,7 @@ $(window).scroll(function () {
 $(window).scroll(function () {
     // console.log('first offsetTop:', $('.first').offset().top);
     // console.log('first scrollTop:', $('.first').scrollTop());
-    if ($(window).scrollTop() >= ($('.store').offset().top - $(window).height() * 1 / 3)) {
+    if ($(window).scrollTop() >= ($('.store').offset().top - $(window).height() * 2 / 3)) {
         $('.top-btn').css({
             transform: 'translateY(0px)',
             opacity: 1,

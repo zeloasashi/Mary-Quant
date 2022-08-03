@@ -127,7 +127,7 @@ svg {
 }
 @media screen and (min-width:720px) {
     .about{
-        background: url(./images/半透明-left.png) right bottom / 10% no-repeat, url(./images/半透明-left.png) right top / 10% no-repeat;
+        background: url(./images/半透明-left.png) right bottom / 8% no-repeat, url(./images/半透明-left.png) right top / 8% no-repeat;
         background-color: azure;
 
     }
@@ -311,7 +311,7 @@ ul.train {
     /* position: absolute; */
     justify-content: space-between;
     margin: 0 auto;
-    transform: translateY(-50vh);
+    transform: translateY(-40vh);
     /* transform: translateX(1000%); */
 }
 .btn-group .btn i{
@@ -464,7 +464,7 @@ ul.train {
 }
 @media screen and (min-width:720px) {
     .store{
-        background: url(./images/白色半透明.png) right bottom / 10% no-repeat;
+        background: url(./images/白色半透明.png) right bottom / 8% no-repeat;
         /* background-color: azure; */
     }
     
