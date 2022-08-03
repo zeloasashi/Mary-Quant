@@ -1,9 +1,9 @@
-// $(window).load(function () {
-//     // 確認整個頁面讀取完畢再將這三個div隱藏起來
-//     $('.icon-white').delay(2000).fadeOut(1000);
-//     //delay --> 延遲幾秒才fadeOut
-//     $('#preloading').delay(2000).fadeOut(1000);
-// })
+$(window).load(function () {
+    // 確認整個頁面讀取完畢再將這三個div隱藏起來
+    $('.icon-white').delay(2000).fadeOut(1000);
+    //delay --> 延遲幾秒才fadeOut
+    $('#preloading').delay(2000).fadeOut(1000);
+})
 // LOADING畫面結束
 // $('.img-wrap > img').hover(function () {
 //     $('.img-wrap img').attr('src', './images/icon 500 o.png')
@@ -220,7 +220,7 @@ $(window).scroll(function () {
     }
     else {
         $('.bg-clothes-right').css({
-            transform: 'translateY(100px)',
+            transform: 'translateY(-100px)',
             opacity: 0,
         })
     }

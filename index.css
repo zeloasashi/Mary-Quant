@@ -359,10 +359,10 @@ ul.train {
     animation: model1 2s ease infinite;
 }
 .clothes-right{
-    width: 325px;
+    width: 170px;
     position: absolute;
     bottom: 500px;
-    right: 3%;
+    right: 1%;
     animation: model2 2s ease infinite;
 }
 @keyframes model1 {
