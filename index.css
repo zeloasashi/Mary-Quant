@@ -199,19 +199,26 @@ img {
 }
 
 /* 第二張圖爆版了QQ */
-/* @media screen and (min-width:720px) {
-    .second:hover {
-        width: 700px;
+@media screen and (min-width:720px) {
+    .second-test{
+        position: absolute;
+        top: 0;
+        width: 350px;   
+        height: 350px;
+        transition: .5s;
+    }
+    .second-test:hover {
+        /* width: 700px; */
         overflow: hidden;
         border-radius: 8px;
         height: 350px;
         background: url(./images/Q3.jpg) center center / cover;
-        border: 3px solid red;
+        /* border: 3px solid red; */
         transform-origin: 100% 100%;
-        transform: translateX(-350px);
+        transform: scale(2);
     }
 
-} */
+}
 
 .third {
     width: 350px;
@@ -233,6 +240,8 @@ img {
 
 .years {
     margin-top: 30px;
+    position: relative;
+    z-index: 1;
 }
 
 .years h4 {
