@@ -191,7 +191,7 @@ img {
     width: 350px;
     height: 350px;
     border-radius: 8px;
-    background: url(./images/Q3.jpg) center center / cover;
+    /* background: url(./images/Q3.jpg) center center / cover; */
     overflow: hidden;
     transform-origin: 100% 100%;
     /* transition: .5s; */
@@ -200,22 +200,30 @@ img {
 
 /* 第二張圖爆版了QQ */
 @media screen and (min-width:720px) {
+    .about-img .second-test{
+        width: 350px;   
+        height: 700px;
+        overflow: hidden;
+    }
     .second-test{
         position: absolute;
         top: 0;
         width: 350px;   
         height: 350px;
+        background: url(./images/Q3.jpg) center center / cover;
+        border-radius: 8px;
         transition: .5s;
     }
     .second-test:hover {
         /* width: 700px; */
-        overflow: hidden;
+        
         border-radius: 8px;
         height: 350px;
         background: url(./images/Q3.jpg) center center / cover;
         /* border: 3px solid red; */
         transform-origin: 100% 100%;
         transform: scale(2);
+        overflow: hidden;
     }
 
 }
