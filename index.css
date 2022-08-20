@@ -215,15 +215,16 @@ img {
         transition: .5s;
     }
     .second-test:hover {
-        /* width: 700px; */
+        width: 700px;
         
         border-radius: 8px;
         height: 350px;
-        background: url(./images/Q3.jpg) center center / cover;
+        background: url(./images/Q3.jpg) center 40% / cover;
         /* border: 3px solid red; */
-        transform-origin: 100% 100%;
-        transform: scale(2);
+        transform-origin: 50% 100%;
+        /* transform: scale(2); */
         overflow: hidden;
+        transform: translateX(-50%);
     }
 
 }
