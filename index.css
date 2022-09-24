@@ -198,7 +198,7 @@ img {
     margin: 0 auto;
 }
 
-/* 第二張圖爆版了QQ */
+/* 第二張圖 */
 @media screen and (min-width:720px) {
     .about-img .second-test{
         width: 350px;   
