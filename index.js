@@ -6,13 +6,13 @@ console.log('index.js');
 //     $('#preloading').delay(2000).fadeOut(1000);
 // })
 
-// setTimeout(function () {
-//     // 確認整個頁面讀取完畢再將這三個div隱藏起來
-//     $('.icon-white').delay(2000).fadeOut(1000);
-//     //delay --> 延遲幾秒才fadeOut
-//     $('#preloading').delay(2000).fadeOut(1000);
-// }
-// )
+setTimeout(function () {
+    // 確認整個頁面讀取完畢再將這三個div隱藏起來
+    $('.icon-white').delay(2000).fadeOut(1000);
+    //delay --> 延遲幾秒才fadeOut
+    $('#preloading').delay(2000).fadeOut(1000);
+}
+)
 
 // LOADING畫面結束
 // $('.img-wrap > img').hover(function () {
@@ -53,6 +53,7 @@ $(window).scroll(function () {
 // NAV結束
 
 // ABOUT動態
+// 照片
 // $('.first').offset({})
 // $(window).scroll(function () {
 //     // console.log('first offsetTop:', $('.first').offset().top);
@@ -108,26 +109,57 @@ $(window).scroll(function () {
 //     }
 
 // })
-// 字沒有跟著一起動態QQ
-// $(window).scroll(function () {
-//     console.log('years offsetTop:', $('.years').offset().top);
-//     console.log('years scrollTop:', $('.years').scrollTop());
-//     if ($(window).scrollTop() >= ($('.years').offset().top - $(window).height() * 2 / 3)) {
-//         $('.years').css({
-//             transform: 'translateY(0px)',
-//             opacity: 1,
-//         })
+// 字
+$(window).scroll(function () {
+    if ($(window).scrollTop() >= ($('.first').offset().top - $(window).height() * 2 / 3)) {
+        $('.firsttext').css({
+            transform: 'translateY(0px)',
+            opacity: 1,
+    })
 
-//     }
-//     else {
-//         $('.years').css({
-//             transform: 'translateY(100px)',
-//             opacity: 0,
-//         })
-//     }
+    }
+    else {
+        $('.firsttext').css({
+            transform: 'translateY(-100px)',
+            opacity: 0,
+        })
+    }
 
-// })
+})
+$(window).scroll(function () {
+    // console.log('years offsetTop:', $('.years h4').offset().top);
+    // console.log('years scrollTop:', $('.years h4').scrollTop());
+    if ($(window).scrollTop() >= ($('.second').offset().top - $(window).height() * 2 / 3)) {
+        $('.secondtext').css({
+            transform: 'translateY(0px)',
+            opacity: 1,
+    })
 
+    }
+    else {
+        $('.secondtext').css({
+            transform: 'translateY(-100px)',
+            opacity: 0,
+        })
+    }
+
+})
+$(window).scroll(function () {
+    if ($(window).scrollTop() >= ($('.third').offset().top - $(window).height() * 2 / 3)) {
+        $('.thirdtext').css({
+            transform: 'translateY(0px)',
+            opacity: 1,
+    })
+
+    }
+    else {
+        $('.thirdtext').css({
+            transform: 'translateY(-100px)',
+            opacity: 0,
+        })
+    }
+
+})
 // 試著做做看視差捲動
 // const daisy = document.querySelectorAll('.icon-test > svg');
 
