@@ -179,7 +179,7 @@ img {
     /* border-radius: 8px; */
     background: url(./images/Q2.jpg) center center / cover;
     overflow: hidden;
-
+    
 }
 
 @media screen and (min-width:720px) {
@@ -222,7 +222,7 @@ img {
     .second-test{
         /* position: absolute;
         top: 0; */
-        width: 560px;   
+        width: 600px;   
         height: 350px;
         background: url(./images/Q3.jpg) center center / cover;
         /* border-radius: 8px; */
