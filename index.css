@@ -457,21 +457,29 @@ ul.train {
 
 .make-up{
     width: 100%;
-    height: auto;
-    background: url(./images/landing-bg-orange.jpg) center center / cover;
+    /* height: auto; */
+    background: url(./images/bg_footer.jpeg) ;
     background-attachment: fixed;
     padding: 2.5rem 0;
 
 }
 .make-up h3{
-    color: #ff7300;
+    color: azure;
+}
+@media screen and (max-width:720px) {
+    .scroll-snap{
+        flex-wrap: nowrap;
+        overflow-x: auto;
+
+    }
 }
 .product{
     flex-direction: column;
     margin: 10px auto;
-    background-color: rgba(255, 255, 255, 0.816);
-    /* border-radius: 8px; */
-    backdrop-filter: blur(2px);
+    background-color: rgba(255, 255, 255, 0.605);
+    /* border-radius: 100%; */
+    backdrop-filter: blur(5px);
+    text-align: center;
 }
 
 .powder{
@@ -503,6 +511,36 @@ ul.train {
     50%{
         transform: rotate(10deg);
     }
+}
+.buy-btn{
+    margin: 2rem auto 0;
+    text-align: center;
+    background-color: rgb(255, 249, 240);
+    /* border: 3px solid #005166; */
+    width:170px;
+    height: 60px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px rgba(63, 63, 63, 0.583);
+    /* -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7));
+    filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7)) */
+}
+.buy-btn a{
+    /* margin-top: 1rem; */
+    text-decoration: none;
+    color: #005166;
+    /* padding: 10px; */
+    transition: .3s;
+}
+.buy-btn a h4{
+    font-family: Impact;
+    margin: 0;
+    line-height: 60px;
+
+}
+.buy-btn:hover a{
+    color: #ff7300;
+
+
 }
 /* -----------------------MAKE UP結束---------------------- */
 .store{
