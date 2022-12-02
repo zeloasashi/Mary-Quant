@@ -519,8 +519,8 @@ ul.train {
     text-align: center;
     background-color: rgb(255, 249, 240);
     /* border: 3px solid #005166; */
-    width:170px;
-    height: 60px;
+    width:100px;
+    height: 40px;
     border-radius: 8px;
     box-shadow: 5px 5px 5px rgba(63, 63, 63, 0.583);
     /* -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7));
@@ -533,10 +533,10 @@ ul.train {
     /* padding: 10px; */
     transition: .3s;
 }
-.buy-btn a h4{
+.buy-btn a h6{
     font-family: Impact;
     margin: 0;
-    line-height: 60px;
+    line-height: 40px;
 
 }
 .buy-btn:hover a{

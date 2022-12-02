@@ -160,7 +160,7 @@ $(window).scroll(function () {
     }
 
 })
-// 試著做做看視差捲動
+// 視差捲動
 // const daisy = document.querySelectorAll('.icon-test > svg');
 
 // const setDaisyInitXPosition = (daisy) => {
@@ -231,6 +231,7 @@ $(window).resize(function () {
     const movement = (0 - nowPage * $('.d-img-wrap').width());
     $('ul.train').css('transform', `translateX(${movement}px)`);
 })
+
 // 猶豫假人要不要浮上來
 $(window).scroll(function () {
     // console.log('third offsetTop:', $('.third').offset().top);
